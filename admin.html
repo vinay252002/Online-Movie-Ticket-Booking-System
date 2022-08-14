@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+</head>
+
+<body>
+    <header>
+        <h1>Your Tickets</h1>
+        <div class="navbar">
+            <p>Admin</p>
+        </div>
+    </header>
+    <div class="card">
+        <div class="container">
+            <form class="form" action="/" method="post">
+                <label for="name">Add New Movie</label>
+                <input type="text" name="title" required>
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        height: 5rem;
+        background-color: #333545;
+        color: white;
+        width: 100%;
+    }
+
+    header h1 {
+        position: absolute;
+        top: 1rem;
+        left: 3.5rem;
+    }
+
+    .navbar {
+        position: absolute;
+        color: white;
+        top: 2rem;
+        right: 2.5rem;
+    }
+
+    .form {
+        color: white;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        border: 1px solid #333545;
+        border-radius: 10px ;
+        height: 30px;
+        margin-top: 2rem;
+        width: 200px;
+    }
+
+    .button {
+        margin-top: 2rem;
+        border: 2px solid transparent;
+        background-color: white;
+        width: 100px;
+        border-radius: 10px;
+        padding: 5px;
+       color: #333545;
+    }
+
+    .card {
+        background-color: #f84464;
+        margin: 3rem;
+        width: 400px;
+        display: flex;
+        height: 200px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+</html>
